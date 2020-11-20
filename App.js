@@ -5,6 +5,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Contatos from './pages/contatos';
 import Texto from './pages/texto'
 import Location from './pages/Location';
+import ImagemCamera from './pages/Camera';
 
 const Tab = createBottomTabNavigator();
 
@@ -14,7 +15,8 @@ const Tab = createBottomTabNavigator();
       <Tab.Navigator>
         <Tab.Screen name="Contatos" component={Contatos} />
         <Tab.Screen name="Texto" component={Texto} />
-        <Tab.Screen name="Localização" component={Location} />
+        <Tab.Screen name="Location" component={Location} />
+        <Tab.Screen name="Camera" component={ImagemCamera} />
       </Tab.Navigator>
     </NavigationContainer>
   );
